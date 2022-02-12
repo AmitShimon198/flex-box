@@ -1,8 +1,10 @@
+import Container from "../container/Container";
 import classes from "./FeaturesSections.module.scss";
+import holdingPhone from "../../assests/holding-phone.jpg";
 const FeatureSection = () => {
     return (<section className={classes.feature_section}>
-        <div className={classes.container}>
-            <ul>
+        <Container className={classes.container}>
+            <ul className={classes.feature_list}>
                 <li>Unlimited Tasks</li>
                 <li>SMS Task Reminder</li>
                 <li>Confetti Explosions upon Task Complition</li>
@@ -10,8 +12,8 @@ const FeatureSection = () => {
                 <li>Real Time Collaboration</li>
                 <li>Other awesome features</li>
             </ul>
-            <img alt='man holding a phone' />
-        </div>
+            <img src={holdingPhone} alt='man holding a phone' />
+        </Container>
     </section>);
 }
 

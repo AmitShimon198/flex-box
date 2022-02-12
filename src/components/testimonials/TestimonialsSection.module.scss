@@ -1,0 +1,32 @@
+:root {
+    --primary-color: #007af3;
+    --secondary-color: #006bd6;
+}
+.testimonial_section {
+    background: var(--primary-color);
+    color: #ffffff;
+    li {
+        background: var(--secondary-color);
+        text-align: center;
+        padding: 2em 1em;
+        width: 80%;
+        margin: 0 auto 5em auto;
+        border-radius: 1em;
+        img {
+            width: 5em;
+            height: 5em;
+            border: 5px solid var(--secondary-color);
+            border-radius: 50%;
+            margin-top: -4.5em;
+        }
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .testimonial_section ul {
+        display: flex;
+        li {
+            margin: 0 1em;
+        }
+    }
+}

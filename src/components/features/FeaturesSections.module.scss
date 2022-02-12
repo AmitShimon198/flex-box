@@ -1,0 +1,53 @@
+.feature_section {
+    background: #20272e;
+    color: #ffffff;
+    ul {
+        margin: 0;
+        padding-left: 0.1em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+        li {
+            font-size: 1.1em;
+            margin-bottom: 1em;
+            margin-left: 2em;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                left: -2em;
+                width: 20px;
+                height: 20px;
+                background-image: url("../../assests/bullet.svg");
+                background-size: contain;
+                margin-right: 0.5em;
+            }
+        }
+    }
+}
+.feature_section img {
+    display: none;
+}
+
+@media only screen and (min-width: 1080px) {
+    ul.feature_list {
+        display: block;
+        margin-left: 5em;
+        li {
+            font-size: 1.4em;
+            &::before {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    .feature_section {
+        position: relative;
+        img {
+            display: block;
+            position: absolute;
+            right: 0;
+            width: 350px;
+            bottom: -2em;
+        }
+    }
+}
